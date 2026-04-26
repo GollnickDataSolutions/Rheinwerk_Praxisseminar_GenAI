@@ -1,0 +1,20 @@
+[project]
+name = "hart_aber_fair"
+version = "0.1.0"
+description = "hart_aber_fair using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.83.0,<1.0.0"
+]
+
+[project.scripts]
+hart_aber_fair = "hart_aber_fair.main:run"
+run_crew = "hart_aber_fair.main:run"
+train = "hart_aber_fair.main:train"
+replay = "hart_aber_fair.main:replay"
+test = "hart_aber_fair.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

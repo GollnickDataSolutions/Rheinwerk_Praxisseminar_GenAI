@@ -1,0 +1,14 @@
+research_task:
+  description: >
+    Finde die Gäste der aktuellsten Hart aber Fair sendung
+  expected_output: >
+    Eine Liste mit den Namen der Gäste der aktuellsten Hart aber Fair sendung
+  agent: researcher
+
+reporting_task:
+  description: >
+    Schreibe eine Analyse zu den Gästen der aktuellsten Hart aber Fair sendung
+  expected_output: >
+    Eine Analyse zu den Gästen der aktuellsten Hart aber Fair sendung
+    Formatiert als markdown mit '```' Ausgabe des Datums und der Gäste ist zwingend erforderlich. Schreibe eine kurze Beschreibung der Gäste und ihre Perspektiven.
+  agent: reporting_analyst
