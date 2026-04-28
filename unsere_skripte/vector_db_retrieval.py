@@ -26,4 +26,7 @@ for doc in res:
     print(doc.page_content)
     print("-"*20)
 
-#%%
+#%% Vektor DB als Retriever
+retriever = faiss_db.as_retriever(search_type="similarity", search_kwargs={"k": 3})
+res = retriever.invoke(query)
+# %%
