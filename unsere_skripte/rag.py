@@ -23,6 +23,12 @@ faiss_db = FAISS.load_local(
 query = "Wer ist Rumpelstilzchen?"
 res = faiss_db.similarity_search(query, k=3)
 
+#%% Similarity Search with Threshold
+query = "Wer ist Rumpelstilzchen?"
+res = faiss_db._similarity_search_with_relevance_scores(query, k=3)
+# res = faiss_db.similarity_search_with_score(query, k=3, score_threshold=0.8)
+res
+
 #%% Show the results
 for doc in res:
     print(doc.page_content)
